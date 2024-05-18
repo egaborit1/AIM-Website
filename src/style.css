@@ -40,6 +40,10 @@ body {
     width: 100%;
     justify-content: space-between;
 }
+#title-nav-container, .boxes-container {
+    overflow: hidden;
+}
+
 #title {
     font-size: 35px;
     flex-grow: 1;
@@ -130,7 +134,29 @@ body {
 
 /* Typing Animation CSS */
 .typing-animation {
-    border-right: 2px solid black;
+    border-right: 2px solid rgb(255, 255, 255);
     white-space: nowrap;
     overflow: hidden;
 }
+
+.fade-in{
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+.fade-in.active{
+    opacity: 1;
+}
+
+
+.slide-in {
+    opacity: 0;
+    transform: translateY(50px); /* Initially move down */
+    transition: opacity 2s ease-in-out, transform 1.5s ease-in-out;
+}
+
+.slide-in.active {
+    opacity: 1;
+    transform: translateY(0); /* Move back to original position */
+}
+
