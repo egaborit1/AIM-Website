@@ -89,4 +89,19 @@ document.getElementById("apply").addEventListener("click", function() {
     });
 });
 
-  
+document.addEventListener("DOMContentLoaded", function() {
+    // Using Intersection Observer API for scroll reveal animation
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+            } else {
+                entry.target.classList.remove('show');
+            }
+        });
+    });
+
+    const hiddenElements = document.querySelectorAll('.hidden');
+    hiddenElements.forEach((el) => observer.observe(el));
+});
+
