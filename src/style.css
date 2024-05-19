@@ -180,6 +180,28 @@ body {
         transition: none;
     }
 }
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+.hidden-nav {
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.show-nav {
+    transform: translateX(0);
+    opacity: 1;
+}
 
 section {
     display: grid;
@@ -189,7 +211,41 @@ section {
 }
 #org{
     font-size: 45px;
+    padding: none;
 }
+#org-subtext {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-style: oblique;
+    font-weight: 50;
+}
+@keyframes fadeInBlur {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+        filter: blur(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+        filter: blur(0);
+    }
+}
+
+.social img {
+    width: 30px; /* Adjust the size as needed */
+    height: auto;
+    margin: 5px;
+    opacity: 0; /* Initially hide the images */
+}
+
+.fade-in-blur {
+    animation: fadeInBlur 1s ease forwards;
+}
+
+
 
 #learn{
     margin-top: 225px;
@@ -200,6 +256,7 @@ section {
     justify-content: center;
     gap: 50px;
     padding: 20px 0;
+    font-size: 31;
 }
 
 /* Ensure existing styles are retained */
@@ -220,7 +277,7 @@ section {
 
 .box img {
     width: 100%; /* Adjust the width to make the image smaller */
-    height: auto;
+    height: 200px;
     border-radius: 5px;
     margin-bottom: 10px;
 }
@@ -279,4 +336,107 @@ section {
     font-size: 20px;
     font-style: bold;
     color: #004499;
+}
+
+.fade-in-blur {
+    animation: fadeInBlur 1s ease forwards;
+}
+
+#sponsors{
+
+    margin-top: 150px;
+}
+/* Style for sponsor images container */
+.sponsor-images {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Space between sponsor images */
+}
+
+/* Style for sponsor images */
+.sponsor-images img {
+    width: 150px; /* Standard width */
+    height: 150px; /* Standard height */
+    object-fit: contain; /* Ensure the image fits within the dimensions */
+    opacity: 0; /* Initially hide the images */
+    transition: opacity 0.3s ease-in, transform 0.3s ease-in, filter 0.3s ease-in;
+    margin: 0 10px; /* Add space between images */
+}
+.fade-in-blur {
+    animation: fadeInBlur 1s ease forwards;
+}
+
+#colorstack {
+    /* Custom adjustments for colorstack */
+    width: 350px;
+    height: 150px;
+}
+
+#shpe {
+    /* Custom adjustments for shpe */
+    width: 350px;
+    height: 150px;
+}
+
+#shield {
+    /* Custom adjustments for shield */
+    width: 150px;
+    height: 150px;
+}
+
+footer {
+    margin-top: 100px;
+    background-color: #000;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#copyright {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    border-bottom: 1px solid transparent; /* Initially hide the bottom border */
+}
+
+#contact {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    
+}
+
+
+.email-link {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.email-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;/* Adjust the line position */
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+.email-link:hover::after {
+    width: 100%; 
+}
+
+#organization {
+    margin-top: 10px; 
+    text-align: left; 
 }
