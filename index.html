@@ -15,7 +15,7 @@
         </div>
         <div id="title-nav-container">
             <h1 id="title" class="typing-animation"></h1>
-            <nav id="navigation" class="inter2">
+            <nav id="navigation" class="inter2 hidden-nav">
                 <ul>
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Events</a></li>
@@ -37,12 +37,12 @@
                 shape the future landscape of innovation.
             </p>
             <div class="social">
-                <h3 id="Socials">Follow Our Socials</h3>
-                <a href="https://github.com/DUColorStackComputerSociety"><img src="../assets/images/git.png" alt="GitHub"></a>
+                <h3 id="Socials" class="slide-in-img">Follow Our Socials</h3>
+                <a href="https://github.com/DUColorStackComputerSociety"><img src="../assets/images/git.png" alt="GitHub" class="slide-in-img"></a>
                 <a href="https://x.com/duccs_org"><img src="../assets/images/x.png" alt="X"></a>
-                <a href="https://www.instagram.com/duccs_org/"><img src="../assets/images/insta.png" alt="Instagram"></a>
-                <a href="https://forms.office.com/r/VemF71HZrd"><img src="../assets/images/Discord.png" alt="Discord"></a>
-                <a href="https://mydomedu.sharepoint.com/sites/DUCCS"><img src="../assets/images/sharepoint.png" alt="Sharepoint"></a>
+                <a href="https://www.instagram.com/duccs_org/"><img src="../assets/images/insta.png" alt="Instagram" class="slide-in-img"></a>
+                <a href="https://forms.office.com/r/VemF71HZrd"><img src="../assets/images/Discord.png" alt="Discord" class="slide-in-img"></a>
+                <a href="https://mydomedu.sharepoint.com/sites/DUCCS"><img src="../assets/images/sharepoint.png" alt="Sharepoint" class="slide-in-img"></a>
             </div>
         </div>
         <div id="right-box">
@@ -53,17 +53,18 @@
 <div id="learn" class="hidden">
 
     <h4 id="org" class="hidden">DU's Largest Organization</h4>
+    <p id="org-subtext" class="hidden">A student-run organization at Dominican University</p> <!-- Added paragraph here -->
 
     <div id="subsection">
         <div class="box">
-            <img src="assets/images/placeholder.png" alt="About Us">
+            <img src="assets/images/duC.jpg" alt="About Us">
             <p class="list">About Us</p>
             <p>Learn about the history and mission of the DU Colorstack Computer Society.</p>
             <button class="box-button">Read More</button>
             
         </div>
         <div class="box">
-            <img src="assets/images/placeholder.png" alt="Projects">
+            <img src="assets/images/parm.png" alt="Projects">
             <p class="list">Projects</p>
             <p>Learn more about the initiatives 
                 we're working on in each of our sub-organizations. </p>
@@ -71,7 +72,7 @@
             
         </div>
         <div class="box">
-            <img src="assets/images/placeholder.png" alt="Join Us"> 
+            <img src="assets/images/Duccs.jpg" alt="Join Us"> 
             <p class="list">Join Us</p>
             <p>Learn how to get involved with DU Colorstack Computer Society!</p>
             <button class="box-button">Read More</button>
@@ -83,8 +84,39 @@
 
 
 </div>
+
+    <div id="sponsors" class="hidden">
+        
+    <h5 id="org" class="hidden">Our Sponsors</h5>
+    <p id="org-subtext" class="hidden">Our work at the DU Computer Society thrives thanks to our sponsors. Interested in sponsoring us? Reach out today!</p> 
+
+        <div class="sponsor-images">
+            <img id="shield" src="assets/images/shield.png" alt="Shield" class="fade-in-blur">
+            <img id="shpe" src="assets/images/shpe.png" alt="SHPE" class="fade-in-blur">
+            <img id="colorstack" src="assets/images/colorstack.png" alt="Colorstack" class="fade-in-blur">
+           
+            
+        </div>
+    </div>
+
+
+
     <script src="src/script.js"></script>
+
 </body>
+
+<footer>
+    <div class="footer-content">
+        <p id="copyright">&copy; 2024 DU Computer Society. All rights reserved.</p>
+        <p id="organization">A Student-led Organization at Dominican University</p>
+        <p id="contact">Contact us: <a href="mailto:egaborit@my.dom.edu" class="email-link">egaborit@my.dom.edu</a></p>
+    </div>
+</footer>
+
+
+
+
+
 
 
 </html>

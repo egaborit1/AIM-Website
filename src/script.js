@@ -104,4 +104,40 @@ document.addEventListener("DOMContentLoaded", function() {
     const hiddenElements = document.querySelectorAll('.hidden');
     hiddenElements.forEach((el) => observer.observe(el));
 });
+document.addEventListener("DOMContentLoaded", () => {
+    const navigation = document.getElementById("navigation");
+    // Add the class to trigger the animation
+    setTimeout(() => {
+        navigation.classList.add("show-nav");
+    }, 100); // Adjust the delay as needed
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    const socialImages = document.querySelectorAll(".social img");
+
+    socialImages.forEach((img, index) => {
+        setTimeout(() => {
+            img.classList.add("fade-in-blur");
+        }, index * 500); // Adjust the delay (500ms) as needed
+    });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    const socialImages = document.querySelectorAll(".social img");
+    const sponsorImages = document.querySelectorAll(".sponsor-images img");
+
+    socialImages.forEach((img, index) => {
+        setTimeout(() => {
+            img.classList.add("fade-in-blur");
+        }, index * 500); // Adjust the delay (500ms) as needed
+    });
+
+    sponsorImages.forEach((img, index) => {
+        setTimeout(() => {
+            img.classList.add("fade-in-blur");
+        }, (index + socialImages.length) * 500); // Adjust the delay to follow social images
+    });
+});
+
+
 
