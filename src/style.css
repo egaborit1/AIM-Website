@@ -97,7 +97,7 @@ body {
     display: flex;
     margin-left: 20px;
     margin-right: 20px;
-    margin-top: 20px; /* Add margin around the container */
+    margin-top: 20px;
     margin-bottom: 0;
 }
 #left-box {
@@ -109,18 +109,18 @@ body {
 #right-box {
     margin-left: 200px;
     display: flex;
-    justify-content: center; /* Center the content horizontally */
-    align-items: center; /* Center the content vertically */
+    justify-content: center; 
+    align-items: center; 
 }
 #left-box img {
-    width: 70px; /* Adjust the width as needed */
-    height: auto; /* Maintain aspect ratio */
+    width: 70px; 
+    height: auto; 
     margin-right: 15px;
 }
 #right-box img {
-    max-width: 100%; /* Ensure image does not exceed container width */
-    height: auto; /* Maintain aspect ratio */
-    max-height: 500px; /* Set maximum height for the image */
+    max-width: 100%; 
+    height: auto; 
+    max-height: 500px;
     margin-top: 15px;
 }
 #clubSummary {
@@ -130,7 +130,7 @@ body {
     margin-top: 100px;
 }
 .social img {
-    width: 30px; /* Adjust the size as needed */
+    width: 30px;
     height: auto;
     margin: 5px;
 }
@@ -154,24 +154,24 @@ body {
 
 .slide-in {
     opacity: 0;
-    transform: translateY(50px); /* Initially move down */
+    transform: translateY(50px);
     transition: opacity 2s ease-in-out, transform 1.5s ease-in-out;
 }
 
 .slide-in.active {
     opacity: 1;
-    transform: translateY(0); /* Move back to original position */
+    transform: translateY(0); 
 }
 
 .hidden {
     opacity: 0;
-    transform: translateY(20px); /* Start with translation */
+    transform: translateY(20px); 
     transition: all 0.6s ease-out;
 }
 
 .show {
     opacity: 1;
-    transform: translateY(0); /* End with no translation */
+    transform: translateY(0);
     filter: blur(0);
 }
 
@@ -235,10 +235,10 @@ section {
 }
 
 .social img {
-    width: 30px; /* Adjust the size as needed */
+    width: 30px;
     height: auto;
     margin: 5px;
-    opacity: 0; /* Initially hide the images */
+    opacity: 0; 
 }
 
 .fade-in-blur {
@@ -259,7 +259,6 @@ section {
     font-size: 31;
 }
 
-/* Ensure existing styles are retained */
 
 .box {
     background-color: #ffffff;
@@ -269,22 +268,21 @@ section {
     text-align: left;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     opacity: 0;
-    transform: translateX(-50px); /* Start position for animation */
+    transform: translateX(-50px); 
     transition: opacity 0.8s ease, transform 0.8s ease, filter 0.8s ease;
-    filter: blur(5px); /* Initial blur effect */
-    padding-bottom: 15px;
+    filter: blur(5px); 
+    padding-bottom: 1px;
 }
 
 .box img {
-    width: 100%; /* Adjust the width to make the image smaller */
+    width: 100%; 
     height: 200px;
     border-radius: 5px;
     margin-bottom: 10px;
 }
 
 .box p {
-     /* Adjust bottom margin to create space */
-    padding: 0 20px; /* Add padding to the left and right */
+    padding: 0 20px; 
 }
 
 .box a {
@@ -292,29 +290,29 @@ section {
     text-decoration: none;
     color: #007BFF;
     font-weight: bold;
-    margin-top: 10px; /* Add space above the link */
+    margin-top: 10px;
     padding-left: 20px;
-    margin-bottom: 10px; /* Add space below the button */
+    margin-bottom: 10px; 
 }
 
 
 
-/* Intersection Observer animation trigger */
+
 .show .box {
     opacity: 1;
-    transform: translateX(0); /* End position for animation */
-    filter: blur(0); /* Remove blur effect */
-}
+    transform: translateX(0); 
+    filter: blur(0); }
 
 .box-button {
-    position: absolute; /* Fix the button position */
-    bottom: 20px; /* Adjust bottom spacing as needed */
-    left: 20%; /* Center horizontally */
-    transform: translateX(-50%); /* Adjust to center precisely */
+    position: absolute; 
+    bottom: 20px; 
+    left: 20%; 
+    transform: translateX(-50%); 
     background-color: #0056b3;
     color: white;
     border: none;
     padding: 10px 20px;
+    margin-top: 0;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -346,40 +344,40 @@ section {
 
     margin-top: 150px;
 }
-/* Style for sponsor images container */
+
 .sponsor-images {
     display: flex;
     justify-content: center;
-    gap: 40px; /* Space between sponsor images */
+    gap: 40px;
 }
 
-/* Style for sponsor images */
+
 .sponsor-images img {
-    width: 150px; /* Standard width */
-    height: 150px; /* Standard height */
-    object-fit: contain; /* Ensure the image fits within the dimensions */
-    opacity: 0; /* Initially hide the images */
+    width: 150px; 
+    height: 150px; 
+    object-fit: contain; 
+    opacity: 0; 
     transition: opacity 0.3s ease-in, transform 0.3s ease-in, filter 0.3s ease-in;
-    margin: 0 10px; /* Add space between images */
+    margin: 0 10px; 
 }
 .fade-in-blur {
     animation: fadeInBlur 1s ease forwards;
 }
 
 #colorstack {
-    /* Custom adjustments for colorstack */
+    
     width: 350px;
     height: 150px;
 }
 
 #shpe {
-    /* Custom adjustments for shpe */
+    
     width: 350px;
     height: 150px;
 }
 
 #shield {
-    /* Custom adjustments for shield */
+   
     width: 150px;
     height: 150px;
 }
@@ -402,14 +400,14 @@ footer {
 }
 
 #copyright {
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
-    border-bottom: 1px solid transparent; /* Initially hide the bottom border */
+    margin: 0; 
+    padding: 0; 
+    border-bottom: 1px solid transparent; 
 }
 
 #contact {
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
+    margin: 0;
+    padding: 0; 
     
 }
 
@@ -424,7 +422,7 @@ footer {
 .email-link::after {
     content: '';
     position: absolute;
-    bottom: -2px;/* Adjust the line position */
+    bottom: -2px;
     left: 0;
     width: 0;
     height: 1px;
@@ -440,3 +438,131 @@ footer {
     margin-top: 10px; 
     text-align: left; 
 }
+
+@media (max-width: 767px) {
+    .typing-animation {
+        white-space: nowrap; 
+        overflow: hidden; 
+        border-right: 2px solid rgb(255, 255, 255);
+        animation: typing 3s steps(30, end), blink-caret 0.5s step-end infinite;
+    }
+    
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+        to {
+            width: 100%;
+        }
+    }
+    
+    @keyframes blink-caret {
+        from, to {
+            border-color: transparent;
+        }
+        50% {
+            border-color: black; 
+        }
+    }
+    #container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    #logo img {
+        margin: 20px 0;
+    }
+    #title {
+        font-size: 24px;
+        text-align: center;
+        margin: 20px 0;
+    }
+    #title-nav-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    #navigation {
+        margin-top: 20px;
+    }
+    #navigation ul {
+        flex-direction: column;
+    }
+    #navigation ul li {
+        margin: 10px 0;
+    }
+    #apply {
+        margin: 20px 0;
+    }
+    #heading {
+        font-size: 36px;
+        margin-top: 40px;
+    }
+    .boxes-container {
+        flex-direction: column;
+        align-items: center; 
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .box {
+        width: 80%; 
+        height: 400px; 
+        margin-bottom: 20px; 
+        text-align: left;
+        padding-bottom: 15px;
+        margin-left: 35px;
+    }
+
+    .box img {
+        height: 200px; 
+    }
+
+    .box p {
+        padding: 0 20px;
+    }
+
+    .box-button {
+        position: static; 
+        margin-top: 20px;
+        margin-left: 20px; 
+        transform: none;
+    }
+    #left-box, #right-box {
+        width: 80%;
+        margin: 10px 0;
+    }
+    #right-box img {
+        max-width: 100%;
+        max-height: 300px;
+    }
+    .social img {
+        width: 20px;
+    }
+    #subsection {
+        flex-direction: column;
+        gap: 20px;
+    }
+  
+    .sponsor-images {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    .sponsor-images img {
+        width: 100px;
+        height: 100px;
+    }
+    footer {
+        padding: 10px 0;
+    }
+    .footer-content {
+        flex-direction: column;
+    }
+    #clubSummary{
+        text-align: center;
+    }
+}
+
+
+    
+

@@ -138,6 +138,18 @@ document.addEventListener("DOMContentLoaded", () => {
         }, (index + socialImages.length) * 500); // Adjust the delay to follow social images
     });
 });
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("aboutButton").onclick = function() {
+        window.location.href = 'src/about.html';
+    };
+    document.getElementById("projectsButton").onclick = function() {
+        window.location.href = 'src/fyi.html';
+    };
+    document.getElementById("joinButton").onclick = function() {
+        window.location.href = 'src/join.html';
+    };
+});
+
 
 
 
