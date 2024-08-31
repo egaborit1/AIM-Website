@@ -31,7 +31,7 @@ body {
 #logo img {
     margin-top: 30px;
     margin-left: 30px;
-    width: 100px; 
+    width: 250px; 
     height: auto; 
 }
 #title-nav-container {
@@ -137,9 +137,11 @@ body {
 
 /* Typing Animation CSS */
 .typing-animation {
-    border-right: 2px solid rgb(255, 255, 255);
     white-space: nowrap;
     overflow: hidden;
+    border-right: 2px solid rgb(255, 255, 255);
+    animation: typing 3s steps(30, end), blink-caret 0.5s step-end infinite;
+    position: relative;   
 }
 
 .fade-in{
@@ -233,6 +235,7 @@ section {
         filter: blur(0);
     }
 }
+
 
 .social img {
     width: 30px;

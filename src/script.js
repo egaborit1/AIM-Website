@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const text1 = "Dominican University Colorstack Computer Society";
-    const text2 = "DUCCS";
-    const typingSpeed = 70; // Typing speed in milliseconds
+    const text1 = "Advanced Idea Minds";
+    const text2 = "A.I.M";
+    const typingSpeed = 150;
     let i = 0;
     const titleElement = document.getElementById("title");
     titleElement.innerHTML = "";
@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
             i++;
             setTimeout(typeWriter1, typingSpeed);
         } else {
-            setTimeout(deleteWriter, 1000); // Delay before starting delete animation
+            setTimeout(deleteWriter, 1500); 
         }
     }
 
