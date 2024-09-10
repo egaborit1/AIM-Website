@@ -1,7 +1,8 @@
 document.addEventListener("DOMContentLoaded", function() {
     const text1 = "Advanced Idea Minds";
     const text2 = "A.I.M";
-    const typingSpeed = 150;
+    const typingSpeed = 100;
+    const deleteSpeed = 100;
     let i = 0;
     const titleElement = document.getElementById("title");
     titleElement.innerHTML = "";
@@ -12,25 +13,24 @@ document.addEventListener("DOMContentLoaded", function() {
             i++;
             setTimeout(typeWriter1, typingSpeed);
         } else {
-            setTimeout(deleteWriter, 1500); 
+            setTimeout(deleteWriter1, 4000); 
         }
     }
 
-    function deleteWriter() {
+    function deleteWriter1() {
         const originalText = titleElement.innerHTML;
-        let deleteSpeed = 50; // Speed of deleting characters in milliseconds
 
-        function deleteAnimation() {
+        function deleteAnimation1() {
             if (titleElement.innerHTML.length > 0) {
                 titleElement.innerHTML = originalText.substring(0, titleElement.innerHTML.length - 1);
-                setTimeout(deleteAnimation, deleteSpeed);
+                setTimeout(deleteAnimation1, deleteSpeed);
             } else {
-                i = 0; // Reset index for typing DUCCS
-                setTimeout(typeWriter2, 500); // Delay before typing DUCCS
+                i = 0; 
+                setTimeout(typeWriter2, 4000); 
             }
         }
 
-        deleteAnimation();
+        deleteAnimation1();
     }
 
     function typeWriter2() {
@@ -38,16 +38,32 @@ document.addEventListener("DOMContentLoaded", function() {
             titleElement.innerHTML += text2.charAt(i);
             i++;
             setTimeout(typeWriter2, typingSpeed);
+        }else{
+            setTimeout(deleteWriter2, 4000);
+
         }
     }
+    function deleteWriter2() {
+        const originalText = titleElement.innerHTML;
 
-    // Start typing animation on page load
+        function deleteAnimation2() {
+            if (titleElement.innerHTML.length > 0) {
+                titleElement.innerHTML = originalText.substring(0, titleElement.innerHTML.length - 1);
+                setTimeout(deleteAnimation2, deleteSpeed);
+            } else {
+                i = 0; 
+                setTimeout(typeWriter1, 4000); 
+            }
+        }
+
+        deleteAnimation2();
+    }
+
     typeWriter1();
 });
 
 
 document.getElementById("apply").addEventListener("click", function() {
-    // Replace the URL below with your Microsoft Forms URL
     window.location.href = "https://forms.office.com/r/fKaZSN5Eyt";
   });
 
@@ -129,13 +145,13 @@ document.addEventListener("DOMContentLoaded", () => {
     socialImages.forEach((img, index) => {
         setTimeout(() => {
             img.classList.add("fade-in-blur");
-        }, index * 500); // Adjust the delay (500ms) as needed
+        }, index * 500); 
     });
 
     sponsorImages.forEach((img, index) => {
         setTimeout(() => {
             img.classList.add("fade-in-blur");
-        }, (index + socialImages.length) * 500); // Adjust the delay to follow social images
+        }, (index + socialImages.length) * 600); 
     });
 });
 document.addEventListener("DOMContentLoaded", function() {
